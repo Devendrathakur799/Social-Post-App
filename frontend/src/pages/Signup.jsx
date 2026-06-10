@@ -25,20 +25,19 @@ function Signup() {
 
  };
 
- const handleSubmit =
- async(e)=>{
-
+ const handleSubmit = async (e) => {
   e.preventDefault();
 
-  await API.post(
-   "/api/auth/signup",
-   form
+  console.log("API URL:", import.meta.env.VITE_API_URL);
+  console.log(
+    "Signup URL:",
+    `${import.meta.env.VITE_API_URL}/api/auth/signup`
   );
 
+  await API.post("/api/auth/signup", form);
+
   navigate("/");
-
- };
-
+};
  return (
 
 <div className="container mt-5">
