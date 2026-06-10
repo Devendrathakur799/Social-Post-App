@@ -31,7 +31,7 @@ function Login() {
 
    const res =
    await API.post(
-    "/auth/login",
+    "/api/auth/login",
     form
    );
 

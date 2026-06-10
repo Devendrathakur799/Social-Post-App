@@ -21,7 +21,7 @@ function PostCard() {
     try {
 
       const res =
-        await API.get("/posts");
+        await API.get("/api/posts");
 
       setPosts(res.data);
 

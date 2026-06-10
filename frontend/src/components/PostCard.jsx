@@ -13,7 +13,7 @@ function PostCard() {
   const fetchPosts = async () => {
     try {
 
-      const res = await API.get("/posts");
+      const res = await API.get("/api/posts");
 
       setPosts(res.data);
 

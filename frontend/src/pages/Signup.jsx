@@ -31,7 +31,7 @@ function Signup() {
   e.preventDefault();
 
   await API.post(
-   "/auth/signup",
+   "/api/auth/signup",
    form
   );
 
